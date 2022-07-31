@@ -18,9 +18,9 @@ class CreateUsersTable extends Migration
             $table->string('account_name')->comment('アカウント名');
             $table->string('name')->comment('ユーザー名');
             $table->string('image_icon',191)->nullable()->default(NULL)->comment('アイコン画像');
-            $table->string('email')->charset("utf8");
+            $table->string('email',191)->charset("utf8");
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password',128);
             $table->rememberToken();
             $table->timestamps();
             $table->string('self_introduction')->nullable()->default(NULL)->comment('自己紹介');
