@@ -29,15 +29,20 @@ a:hover {
     border: 0.2px solid #aaa;
 }
 
-.post-table-container .card .card-header .user-info .user-detail span{    font-weight: bold;
+.post-table-container .card .card-header .user-info .user-detail span {
+    font-weight: bold;
 }
 
-.post-table-container .card .card-header .user-info .user-detail a{   
+.post-table-container .card .card-header .user-info .user-detail a {
     color: #aaa;
 }
 
 .post-table-container .card .card-body .post-body {
     margin-bottom: 15px;
+}
+
+.post-table-container .card .card-body .post-body span {
+    color: #a9a9a9;
 }
 
 .post-table-container .card .card-body .post-image {
@@ -64,9 +69,11 @@ a:hover {
     border: 0.2px solid #aaa;
 }
 
-.post-container .card .card-body .user-info .user-detail span{font-weight: bold;}
+.post-container .card .card-body .user-info .user-detail span {
+    font-weight: bold;
+}
 
-.post-container .card .card-body .user-info .user-detail a{
+.post-container .card .card-body .user-info .user-detail a {
     color: #aaa;
 }
 

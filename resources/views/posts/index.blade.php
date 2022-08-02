@@ -58,9 +58,16 @@
                 </div>
 
                 <div class="card-body">
+                    @if($post->created_at != $post->updated_at)
+                    <div class="post-body">
+                        {{ $post->body }} <span>（編集済み）</span>
+                    </div>
+                    @else
                     <div class="post-body">
                         {{ $post->body }}
                     </div>
+                    @endif
+
                     <!-- ifで画像があるときとない時で分岐させる -->
                     @if(!empty($post->image))
                     <div class="post-image w-50">
