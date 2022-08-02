@@ -33,7 +33,7 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">投稿の内容（140文字以内）</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="5" placeholder="早速投稿してみよう！（140文字以内）" maxlength="140" required autofocus></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="5" placeholder="さっそく投稿してみよう！" maxlength="140" required autofocus></textarea>
                         </div>
 
                         <div class="mb-3">

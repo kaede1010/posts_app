@@ -70,7 +70,7 @@
 
                     <!-- ifで画像があるときとない時で分岐させる -->
                     @if(!empty($post->image))
-                    <div class="post-image w-50">
+                    <div class="post-image">
                         <img src="{{ $post->image }}" alt="ユーザーアイコン">
                     </div>
                     @endif

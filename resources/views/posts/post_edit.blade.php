@@ -34,17 +34,17 @@
                         <input type="text" class="form-control" name="id" value="{{$post->id}}" hidden>
                         
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">投稿の内容（140文字以内））</label>
+                            <label for="exampleFormControlTextarea1" class="form-label">投稿の内容（140文字以内）</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="5" placeholder="早速投稿してみよう！" maxlength="140" required autofocus>{{ $post->body }}</textarea>
                         </div>
 
                         <div class="mb-3">
-                            <label for="formFile" class="form-label">画像を変更または追加（※必須ではありません）</label>
+                            <label for="formFile" class="form-label">画像を変更・追加（※必須ではありません）</label>
                             <input class="form-control p-0 h-auto" type="file" id="formFile" name="image">
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                        <div class="form-group row mb-0 justify-content-center">
+                            <div class="col-md-6 text-center">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('編集する') }}
                                 </button>

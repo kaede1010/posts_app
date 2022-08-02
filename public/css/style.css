@@ -46,6 +46,7 @@ a:hover {
 }
 
 .post-table-container .card .card-body .post-image {
+    width: 45%;
     margin: auto;
 }
 
@@ -83,8 +84,8 @@ a:hover {
 
 /* ユーザーの画面（共通） */
 .user-profile .user-info .user-image {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
 }
 
