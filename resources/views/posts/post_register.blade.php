@@ -41,8 +41,8 @@
                             <input class="form-control p-0 h-auto" type="file" id="formFile" name="image">
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                        <div class="form-group row mb-0 justify-content-center">
+                            <div class="col-md-6 text-center">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('投稿する') }}
                                 </button>

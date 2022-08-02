@@ -41,25 +41,24 @@
 
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
+                                <div class="form-check mb-2">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
                                         {{ __('ログイン状態を保存する') }}
                                     </label>
                                 </div>
+                                <a class="btn btn-link p-0" href="{{ route('register') }}">
+                                    {{ __('アカウント未登録の方はこちら') }}
+                                </a>
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                        <div class="form-group row mb-0 justify-content-center">
+                            <div class="col-md-8 text-center">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('ログイン') }}
                                 </button>
-
-                                <a class="btn btn-link" href="{{ route('register') }}">
-                                    {{ __('アカウント未登録の方はこちら') }}
-                                </a>
                             </div>
                         </div>
                     </form>

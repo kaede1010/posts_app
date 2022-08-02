@@ -55,6 +55,10 @@ a:hover {
     border: 1px solid #aaa;
 }
 
+.post-table-container .card .card-footer button a{
+    color: #fff;
+}
+
 /* 投稿画面（共通） */
 .post-container .card .card-body .user-info .user-image {
     width: 45px;
