@@ -76,11 +76,11 @@
                     @endif
                 </div>
 
-                <div class="card-footer d-flex justify-content-end align-items-center">
+                <div class="card-footer d-flex justify-content-end align-items-center p-2">
                     @if($post->user_id === Auth::user()->id)
                     <!-- 自分が投稿したものであるとき編集と削除を出すように分岐させる -->
-                    <div class="post-edit"><a class="text-primary font-weight-bold" href="{{ url('post_edit/'.$post->id) }}">編集</a></div>
-                    <div class="post-delete ml-4 text-danger font-weight-bold"><a class="text-danger" href="{{ url('post_delete/'.$post->id) }}">削除</a></div>
+                    <button class="btn btn-primary"><a href="{{ url('post_edit/'.$post->id) }}">編集</a></button>
+                    <button class="btn btn-danger ml-3"><a href="{{ url('post_delete/'.$post->id) }}">削除</a></button>
                     @endif
                 </div>
 

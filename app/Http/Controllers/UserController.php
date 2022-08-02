@@ -94,10 +94,13 @@ class UserController extends Controller
             ->where('posts.user_id', '=', $user->id)
             ->orderBy('created_at', 'desc')
             ->get();
+        
+        $posts_count = Post::where('user_id', '=', $user->id)->count();
 
         return view('users.user_detail', [
             'user' => $user,
             'posts' => $posts,
+            'posts_count' => $posts_count,
         ]);
     }
 

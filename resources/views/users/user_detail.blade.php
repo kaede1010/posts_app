@@ -24,10 +24,13 @@
                         <span class="mb-2">{{ $user->name }}</span>
                         <a href="{{ url('user_detail/'.$user->id) }}" class="mb-2">@ {{ $user->account_name }}</a>
                         @if(empty($user->self_introduction))
-                        <div>まだ自己紹介がありません</div>
+                        <div class="mb-2">まだ自己紹介がありません</div>
                         @else
-                        <div>{{ $user->self_introduction }}</div>
+                        <div class="mb-2">{{ $user->self_introduction }}</div>
                         @endif
+                        <div class="mb-2">
+                            投稿数 <span class="ml-2">{{ $posts_count }}</span>
+                        </div>
                     </div>
                 </div>
 
